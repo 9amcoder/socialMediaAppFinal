@@ -49,7 +49,6 @@ exports.signup = (req, res) => {
         handle: newUser.handle,
         email: newUser.email,
         createdAt: new Date().toISOString(),
-        //TODO Append token to imageUrl. Work around just add token from image in storage.
         imageUrl: `https://firebasestorage.googleapis.com/v0/b/${config.storageBucket}/o/${noImg}?alt=media`,
         userId,
       };
